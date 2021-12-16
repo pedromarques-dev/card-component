@@ -1,0 +1,132 @@
+body {
+    background-color: var(--color-background-body);
+}
+
+
+.card-container {
+    background-color: var(--color-background-card);
+    width: 300px;
+    margin: 10% auto;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+    color: var(--color-paragraph);
+    position: relative;
+}
+
+.card-container .image {
+    text-align: center;
+}
+
+
+.card-container .image .image-equilibrium{
+    width: 88%;
+    height: 250px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.card-container .overlay {
+    background-color: rgba(12, 189, 233, 0.7);
+    position: absolute;
+    width: 265px;
+    height: 250px;
+    top: 15px;
+    left: 18px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container .overlay img {
+    width: 48px;
+    height: 48px;
+}
+
+.card-container .overlay:hover,
+.card-container .description h3:hover,
+.card-container .creator span:hover {
+    opacity: 1;
+    color: var(--color-ethereum);
+    transition: 0.3s ease-in-out;
+}
+
+.card-container .image .image-equilibrium:hover {
+    background: url('../images/olho.png') center center no-repeat;
+    z-index: 1;
+}    
+
+
+.card-container .description {
+    margin-left: 20px;
+
+}
+
+.card-container .description h3 {
+    color: var(--color-white);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+
+.card-container .description p {
+    font-size: 1.6rem;
+}
+
+.card-container .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container .content .ethereum {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    color: var(--color-ethereum);
+    margin: 15px 0;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.card-container .content .ethereum p {
+    margin-left: 7.5px;
+}
+
+.card-container .content .clock {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin: 15px 0;
+    padding: 20px;
+}
+
+.card-container .content .clock p {
+    margin-left: 7.5px;
+}
+
+.card-container .line {
+    width: 87%;
+    height: 3px;
+    margin: auto;
+   background-color: var(--color-line);
+}
+
+.card-container .creator {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding: 15px 15px 25px;
+}
+
+.card-container .creator .person-creator {
+    width: 32px;
+}
+
+.card-container .creator p {
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+.card-container .creator p span {
+    color: var(--color-white);
+}
